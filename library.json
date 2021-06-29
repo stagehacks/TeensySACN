@@ -1,5 +1,5 @@
 {
-  "name": "TeensyDMX",
+  "name": "TeensySACN",
   "description": "A basic library for receiving sACN (ANSI E1.31) on Teensy 4.1.",
   "keywords": "dmx, teensy, sacn, e1.31",
   "authors": {
