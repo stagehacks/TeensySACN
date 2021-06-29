@@ -1,0 +1,19 @@
+{
+  "name": "TeensyDMX",
+  "description": "A basic library for receiving sACN (ANSI E1.31) on Teensy 4.1.",
+  "keywords": "dmx, teensy, sacn, e1.31",
+  "authors": {
+    "name": "Alec Sparks",
+    "email": "alec@stagehacks.com",
+    "maintainer": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stagehacks/TeensySACN"
+  },
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/stagehacks/TeensySACN",
+  "frameworks": "arduino",
+  "platforms": "teensy"
+}
