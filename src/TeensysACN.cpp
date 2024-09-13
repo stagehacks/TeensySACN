@@ -49,12 +49,14 @@ void teensysacn::Receiver::_packetReceived(unsigned char * buf){
   //byte subnet = buf[113];
   byte universe = buf[114];
   byte priority = buf[108];
-
-  if (universe == _universe && priority >= _priority) {
-    _hasData = true;
-    _priority = priority;
-    for (int slot = 0; slot < _slotCount; slot++) {
-      _slots[slot] = buf[126 + slot];
+  byte ddpacket = buf[125];//added by andrew webberley
+  if ( ddpacket != 0xdd ) {//added by andrew webberley
+    if (universe == _universe && priority >= _priority) {
+      _hasData = true;
+      _priority = priority;
+      for (int slot = 0; slot < _slotCount; slot++) {
+        _slots[slot] = buf[126 + slot];
+      }
     }
   }
 
